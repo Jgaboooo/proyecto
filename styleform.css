@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7e9;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #2b7a0b;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #2b7a0b;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border: 1px solid #8bc34a;
+    border-radius: 5px;
+    width: 60%;
+    box-sizing: border-box;
+    background-color: #f1f8e9;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    text-align: center;
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+header {
+    background-color: #2b7a0b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #8bc34a;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header a.boton-redireccion {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header a.boton-redireccion:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2b7a0b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #8bc34a;
+}
