@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciencia Ambiental</title>
+    <link rel="stylesheet" href="static/style/style.css">
+</head>
+<body>
+    <header>🌱 Salvemos el Planeta 🌍</header>
+    <nav>
+        <a href="catastrofes" class="boton-redireccion">Catástrofes</a>
+        <a href="form" class="boton-redireccion">formulario informacion semanal</a>
+        <a href="soluciones" class="boton-redireccion">Problemas y Soluciones</a>
+        <a href="bot" class="boton-redireccion">bot de discord</a>
+    </nav>
+    <main>
+        <section class="cuidar-medio-ambiente">
+            <h1>¿Por qué debemos cuidar el medio ambiente?</h1>
+            <p>Cualquier organismo obtiene del medioambiente el sustento necesario para garantizar su supervivencia, no solo alimento, sino, también, refugio, aire o energía. Por eso, mantener su equilibrio resulta fundamental para asegurar la vida tal y como se conoce hoy en día.</p>
+            <img src="static/img/que_debemos.jpeg" alt="medio ambiente">
+        </section>
+        
+        <section class="consecuencias">
+            <h2>Consecuencias de no cuidar el medio ambiente</h2>
+            <p>Si no protegemos el medio ambiente, enfrentaremos problemas como el cambio climático, la pérdida de biodiversidad, la contaminación del agua y del aire, y el agotamiento de recursos naturales. Estas consecuencias impactan directamente en la calidad de vida de todos los seres vivos, incluyéndonos a nosotros.</p>
+            <img src="static/img/consecuencias.jpeg" alt="medio ambiente">
+        </section>
+        
+        <section class="proteger-medio-ambiente">
+            <h3>¿Qué podemos hacer para proteger el medio ambiente?</h3>
+            <p>Podemos contribuir cuidando el medio ambiente con acciones simples: reducir, reutilizar y reciclar; usar energías renovables; consumir de manera responsable; plantar árboles; y evitar el desperdicio de agua y electricidad. Cada pequeño esfuerzo suma para preservar el planeta.</p>
+            <img src="static/img/fto_como_podemos.jpeg" alt="medio ambiente">
+        </section>
+        
+
+        <button onclick="incrementCounter()">¡Únete a la causa!</button>
+        <p>Contador: <span id="counter">0</span>/100</p>
+        <script>
+            let counter = 0;
+            function incrementCounter() {
+                if (counter < 100) {
+                    counter++;
+                    document.getElementById('counter').innerText = counter;
+                    localStorage.setItem('counter', counter);
+                }
+            }
+            window.onload = function() {
+                if (localStorage.getItem('counter')) {
+                    counter = parseInt(localStorage.getItem('counter'));
+                    document.getElementById('counter').innerText = counter;
+                }
+            }
+        </script>
+    </main>
+    <footer>&copy; 2024 Salvemos el Planeta. Todos los derechos reservados.</footer>
+</body>
+</html>
